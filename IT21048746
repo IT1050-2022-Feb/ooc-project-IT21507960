@@ -1,0 +1,121 @@
+//Payment
+#include<iostream>
+#include<cstring>
+using namespace std;
+class Payment{
+	private:
+		int pID;
+		int cardNumber;
+		char name[8];
+		char paymentType[4];
+		float amount;
+		
+		
+	public:
+		Payment();
+		void setPayDetails(int xpID, int xcardNumber, char xname[], char xpaymentType[]);
+		void display();
+		float calcTotal();
+		void confirmPay();
+
+		
+};
+#include<cstring>
+Payment::Payment()
+{
+	pID = 0;
+	cardNumber = 0;
+	strcpy(name,"");
+	strcpy(paymentType,"");
+	
+
+}
+	void Payment::setPayDetails(int xpID, int xcardNumber, char xname[], char xpaymentType[])
+{
+	pID = xpID; 
+  
+  // Reservation
+  # include"Payment.h"
+#include<cstring>
+using namespace std;
+class Reservation {
+	private:
+		int bKID;
+		char bookingDetails;
+		double bookPrice;
+		int count = 0;
+		
+		
+	public:
+		Reservation();
+		Reservation(int bKID, char bookingDetails[]);
+		void setReservationDetails(int bKID, char bookingDetails);
+		void confirmReservation();
+		void deleteReservation();
+		
+			
+};
+#include<cstring>
+Reservation::Reservation()
+{
+	bKID = 0;
+	strcpy(bookingDetails, "");
+	bookPrice = 0;
+}
+	Reservation::Reservation(int bKID, char bookingDetails)
+{
+	void Booking::calculateBookPrice(int pID, int cardNumber, char paymentType, flaot amount)
+{
+if (count < SIZE)
+{
+	payment[count] = new Payment(pID, cardNumber, paymentType, amount);
+	count++;
+}
+}
+void Reservation::displayBookPrice()
+{
+}
+void Reservation::confirmReservation()
+{
+}
+Reservation::~Reservation()
+{
+//Destructor
+for (int i = 0; i < SIZE; i++)
+{
+delete payment[i];
+}
+}
+	cardNumber = xcardNumber;
+	strcpy (name, xname);
+	strcpy (paymentType, xpaymentType);
+	
+}
+
+	void Payment::confirmPay()
+{
+}
+void Payment::display()
+{
+		cout<<"PID: "<<pID<<endl;
+			cout<<"Card holder's name': "<<name<<endl;
+		cout<<"Card number: "<<cardNumber<<endl;
+			cout<<"Payment Type: "<<paymentType<<endl;
+			
+			
+}
+		float calcTotal()
+		{
+			float amount;
+			return  amount;
+}
+
+int main ()
+{
+	Payment cus1;
+	cus1.setPayDetails(2015,7854126, "Kamal", "Visa");
+	cus1.display();
+		cout<<"Total: "<<endl;
+
+	return 0;
+}
